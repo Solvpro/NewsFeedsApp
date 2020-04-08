@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_explore">
+
+    <fragment
+        android:id="@+id/nav_explore"
+        android:name="com.example.newsfeedsapp.ui.main.article.ArticleFragment"
+        android:label="@string/toolbar_name"
+        tools:layout="@layout/fragment_article">
+
+        <action
+            android:id="@+id/action_ArticleFragment_to_ArticleDetailFragment"
+            app:destination="@id/nav_article_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_article_detail"
+        android:name="com.example.newsfeedsapp.ui.main.articledetail.ArticleDetailFragment"
+        android:label="@string/toolbar_name"
+        tools:layout="@layout/fragment_article_detail">
+        <action
+            android:id="@+id/action_ArticleDetailFragment_to_ArticleFragment"
+            app:destination="@id/nav_explore"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+
+</navigation>

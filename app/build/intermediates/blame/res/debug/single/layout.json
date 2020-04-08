@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_article.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\fragment_article.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_drawer_view.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\item_drawer_view.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header_main.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_drawer_main.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\nav_drawer_main.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_article_detail.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\fragment_article_detail.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_article_view.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\item_article_view.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_explore_detail.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\activity_explore_detail.xml"
+    },
+    {
+        "merged": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_article_empty_view.xml",
+        "source": "D:\\LinkDevelopment\\NewsFeedsApp\\app\\src\\main\\res\\layout\\item_article_empty_view.xml"
+    }
+]

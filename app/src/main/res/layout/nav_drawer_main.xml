@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.MainActivity">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.newsfeedsapp.ui.main.MainViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/header_color">
+
+        <include
+            layout="@layout/nav_header_main" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navItemExplore"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/header_color">
+
+            <ImageView
+                android:id="@+id/ivExploreDrawerSelected"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivExploreSelected"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/explore" />
+
+            <ImageView
+                android:id="@+id/ivExploreSelected"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/selected" />
+
+            <TextView
+                android:id="@+id/tvExploreDrawer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:text="@string/explore"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivExploreDrawerSelected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivExploreDrawerSelected"
+                app:layout_constraintTop_toTopOf="@+id/ivExploreDrawerSelected" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navItemLiveChat"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/header_color">
+
+            <ImageView
+                android:id="@+id/ivLiveChatDrawerSelected"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivLiveChatSelected"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/live" />
+
+            <ImageView
+                android:id="@+id/ivLiveChatSelected"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/un_selected" />
+
+            <TextView
+                android:id="@+id/tvLiveChatDrawer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:text="@string/live_chat"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivLiveChatDrawerSelected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivLiveChatDrawerSelected"
+                app:layout_constraintTop_toTopOf="@+id/ivLiveChatDrawerSelected" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navItemGallery"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/header_color">
+
+            <ImageView
+                android:id="@+id/ivGalleryDrawerSelected"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivGallerySelected"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gallery" />
+
+            <ImageView
+                android:id="@+id/ivGallerySelected"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/un_selected" />
+
+            <TextView
+                android:id="@+id/tvGalleryDrawer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:text="@string/gallery"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivGalleryDrawerSelected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivGalleryDrawerSelected"
+                app:layout_constraintTop_toTopOf="@+id/ivGalleryDrawerSelected" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navItemWishList"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/header_color">
+
+            <ImageView
+                android:id="@+id/ivWishListDrawerSelected"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivWishListSelected"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/wishlist" />
+
+            <ImageView
+                android:id="@+id/ivWishListSelected"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/un_selected" />
+
+            <TextView
+                android:id="@+id/tvWishListDrawer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:text="@string/wish_list"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivWishListDrawerSelected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivWishListDrawerSelected"
+                app:layout_constraintTop_toTopOf="@+id/ivWishListDrawerSelected" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navItemEMagazine"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/header_color">
+
+            <ImageView
+                android:id="@+id/ivEMagazineDrawerSelected"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivEMagazineSelected"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/e_magazine" />
+
+            <ImageView
+                android:id="@+id/ivEMagazineSelected"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/un_selected" />
+
+            <TextView
+                android:id="@+id/tvEMagazineDrawer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:text="@string/e_magazine"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivEMagazineDrawerSelected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivEMagazineDrawerSelected"
+                app:layout_constraintTop_toTopOf="@+id/ivEMagazineDrawerSelected" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

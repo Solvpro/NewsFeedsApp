@@ -1,0 +1,32 @@
+<resources>
+    <!--App Name-->
+    <string name="app_name">NewsFeedsApp</string>
+
+    <!--Toolbar Name-->
+    <string name="toolbar_name">Link Development</string>
+
+    <!--Menu Titles-->
+    <string name="search">Search</string>
+
+    <!--Drawer-->
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <!--Drawer Menus-->
+    <string name="explore">Explore</string>
+    <string name="live_chat">Live Chat</string>
+    <string name="gallery">Gallery</string>
+    <string name="wish_list">Wish List</string>
+    <string name="e_magazine">E-Magazine</string>
+
+    <!--Profile Info-->
+    <string name="welcome">Welcome</string>
+    <string name="username">Tony Roshdy</string>
+
+    <!--Article Detail-->
+    <string name="open_website">Open Website</string>
+
+    <!--Internet Connection-->
+    <string name="internet_connect">You are not connected to Internet</string>
+
+</resources>
